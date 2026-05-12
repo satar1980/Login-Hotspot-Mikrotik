@@ -1453,11 +1453,11 @@ int main(int argc, char* argv[]) {
         fb_text(fb, 10, 10, url_display, rgb565(255, 255, 255));
         
         if (browser.logged_in) {
-            fb_text(fb, fb->width - 90, 10, "LOGGED IN", rgb565(0, 255, 0));
+            fb_text(fb, 400, 10, "LOGGED IN", rgb565(0, 255, 0));
         } else if (browser.login_attempted) {
-            fb_text(fb, fb->width - 110, 10, "LOGIN FAILED", rgb565(255, 100, 100));
+            fb_text(fb, 400, 10, "LOGIN FAILED", rgb565(255, 100, 100));
         } else {
-            fb_text(fb, fb->width - 110, 10, "NOT LOGGED IN", rgb565(255, 255, 0));
+            fb_text(fb, 400, 10, "NOT LOGGED IN", rgb565(255, 255, 0));
         }
         
         fb_rect(fb, 0, fb->height - 30, fb->width, 30, rgb565(240, 240, 240));
